@@ -130,9 +130,13 @@ export IMPALA_CYRUS_SASL_INSTALL_DIR=/tmp/impala-build/cyrus-sasl-${IMPALA_CYRUS
 # We don't have .x build, the next upcoming one is the latest build.
 # Please increase the piont release version when cut new release branch so that
 # the thirdparty dependencies will be the latest.
-export IMPALA_HADOOP_VERSION=2.6.0-cdh5.4.5
-export IMPALA_HBASE_VERSION=1.0.0-cdh5.4.5
-export IMPALA_HIVE_VERSION=1.1.0-cdh5.4.5
+
+# Use HDP versions
+export IMPALA_HADOOP_VERSION=2.7.1.2.3.0.0-2557
+export IMPALA_HBASE_VERSION=1.1.1.2.3.0.0-2557
+export IMPALA_HIVE_VERSION=1.2.1.2.3.0.0-2557
+# Sentry, llama, llvm (and parquet?) aren't used by HDP so we use the CDH versions.
+# Hortonworks did not fork Avro or Thrift, and both Impala and HDP 2.3 happen to use the same versions of Avro and Thrift
 export IMPALA_SENTRY_VERSION=1.4.0-cdh5.4.5
 export IMPALA_LLAMA_VERSION=1.0.0-cdh5.4.5
 export IMPALA_AVRO_VERSION=1.7.4
