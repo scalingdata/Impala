@@ -37,16 +37,20 @@ add_library(Util
   default-path-handlers.cc
   disk-info.cc
   error-util.cc
+  exception.c
   filesystem-util.cc
   hdfs-util.cc
   hdfs-bulk-ops.cc
+  htable.c
   impalad-metrics.cc
+  jni_helper.c
   jni-util.cc
   llama-util.cc
   logging-support.cc
   mem-info.cc
   memory-metrics.cc
   metrics.cc
+  mutexes.c
   network-util.cc
   os-info.cc
   os-util.cc
@@ -66,6 +70,7 @@ add_library(Util
   table-printer.cc
   test-info.cc
   thread.cc
+  thread_local_storage.c
   time.cc
   url-parser.cc
   url-coding.cc
