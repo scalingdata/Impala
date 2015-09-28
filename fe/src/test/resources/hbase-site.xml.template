@@ -50,6 +50,10 @@
     <name>hbase.rpc.timeout</name>
     <value>30000</value>
   </property>
+  <property>
+    <name>hbase.master.port</name>
+    <value>60000</value>
+  </property>
 
   <property>
     <name>hbase.zookeeper.property.dataDir</name>
