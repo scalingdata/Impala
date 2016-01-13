@@ -17,7 +17,7 @@
 # Note: for internal (aka pre-release) versions, the version should have
 # "-INTERNAL" appended. Parts of the code will look for this to distinguish
 # between released and internal versions.
-VERSION=2.2.0-hdp2.3.0-rocana1.3.0
+VERSION=2.2.0-hdp2.3.0-rocana1.4.0-rc1
 GIT_HASH=$(git rev-parse HEAD)
 BUILD_TIME=`date`
 HEADER="# Generated version information from save-version.sh"
